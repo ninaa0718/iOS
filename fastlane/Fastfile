@@ -16,7 +16,7 @@ platform :ios do
  
 
 default_platform(:ios)
-lane :test
+lane :test do
 scan(
     xcodeproj: "SimpleCalculator.xcodeproj",
     configuration: "Debug",
