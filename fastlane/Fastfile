@@ -17,15 +17,15 @@ platform :ios do
 
 default_platform(:ios)
 lane :test do
-scan(
-    xcodeproj: "SimpleCalculator.xcodeproj",
+  scan(
+    project: "SimpleCalculator.xcodeproj",
     configuration: "Debug",
     scheme: "SimpleCalculator",
     device: "iPhone 8 Plus",
     sdk: "iphonesimulator",
     output_types: "html"
-  )
-
+    )
+end
 end
 
 
