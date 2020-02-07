@@ -26,6 +26,19 @@ lane :test do
     output_types: "html"
     )
 end
+
+lane :release
+ set_github_release(
+ 	repository_name: "ninaa0718/iOS",
+ 	api_token: ENV['github'],
+ 	name: ENV['name'],
+ 	tag_name: ENV['tag'],
+ 	commitish: master,
+ 	description: test_results,
+  is_draft: false,
+  upload_assets: ["./fastlane/test_output"]
+ 	)
+end
 end
 
 
