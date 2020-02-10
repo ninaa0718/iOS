@@ -30,7 +30,7 @@ lane :test do
  	    api_token: ENV['github'],
  	    name: ENV['name'],
  	    tag_name: ENV['tag'],
- 	    commitish: master,
+ 	    commitish: "master",
  	    description: test_results,
       is_draft: false,
       upload_assets: ["./fastlane/test_output"]
