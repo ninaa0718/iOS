@@ -27,7 +27,7 @@ lane :test do
     )
 end
 
-lane :release
+lane :release do
    set_github_release
      (
  	    repository_name: "ninaa0718/iOS",
