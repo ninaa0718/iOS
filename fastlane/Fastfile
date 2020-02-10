@@ -25,11 +25,7 @@ lane :test do
     sdk: "iphonesimulator",
     output_types: "html"
     )
-end
-
-lane :release do
-   set_github_release
-     (
+   github_release = set_github_release(
  	    repository_name: "ninaa0718/iOS",
  	    api_token: ENV['github'],
  	    name: ENV['name'],
